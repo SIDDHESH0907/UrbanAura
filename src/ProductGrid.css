@@ -1,0 +1,24 @@
+/* ProductGrid.css */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
+    gap: 20px; /* Increased gap between rows and columns */
+    margin: 0 180px; /* Left and right margins set to 180px */
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    transition: border 0.5s; /* Add transition property for the border */
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card:hover {
+    border: 1px solid black;
+  }
+  
