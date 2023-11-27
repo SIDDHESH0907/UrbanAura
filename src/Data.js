@@ -3,18 +3,18 @@ import Product from './Product';
 import Category from './Category';
 
 const categories = [
-  new Category(1, 'Living Room', '/images/living-room.jpg'),
+  new Category(1, 'Living Room', 'public/images/living-room.jpg'),
   new Category(2, 'Skincare', '/images/skincare.jpg'),
   new Category(3, 'Kitchen', '/images/kitchen.jpg'),
   new Category(4, 'Electronics', '/images/electronics.jpg'),
 ];
 
 const products = [
-  new Product(1, 'Sofa', 499.99, 'Comfortable sofa for your living room', 1, '/images/sofa.jpg'),
-  new Product(2, 'Coffee Table', 149.99, 'Stylish coffee table for your living room', 1, '/images/coffee-table.jpg'),
-  new Product(3, 'Moisturizer', 19.99, 'Hydrating moisturizer for your skincare routine', 2, '/images/moisturizer.jpg'),
-  new Product(4, 'Cookware Set', 129.99, 'High-quality cookware set for your kitchen', 3, '/images/cookware.jpg'),
-  new Product(5, 'Smart TV', 799.99, '4K Smart TV for your entertainment', 4, '/images/smart-tv.jpg'),
+  new Product(1, 'Sofa', 499.99, 'Comfortable sofa for your living room', 1, '/images/sofa.png'),
+  new Product(2, 'Coffee Table', 149.99, 'Stylish coffee table for your living room', 1, '/images/coffee-table.png'),
+  new Product(3, 'Moisturizer', 19.99, 'Hydrating moisturizer for your skincare routine', 2, '/images/moisturizer.png'),
+  new Product(4, 'Toaster', 39.99, 'Compact toaster for quick breakfasts', 3, '/images/toaster.png'),
+  new Product(5, 'Smart TV', 799.99, '4K Smart TV for your entertainment', 4, '/images/smart-tv.png'),
   // Add more products here
   new Product(6, 'Dining Table', 299.99, 'Elegant dining table for your home', 1, '/images/dining-table.jpg'),
   new Product(7, 'Bed Frame', 399.99, 'Sturdy bed frame for a good night\'s sleep', 1, '/images/bed-frame.jpg'),

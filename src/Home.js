@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <div>
         <header id="navbar">
-          <img class="logo" src="/urbanaura1.jpg" alt="UrbanAura Logo" />
+          <img class="logo" src="urbanaura1.jpg" alt="UrbanAura Logo" />
 
           <ul className="menu">
             <li>
