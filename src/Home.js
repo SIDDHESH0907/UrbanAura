@@ -2,46 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Home.css";
-import {products } from "./Data";
-import ProductGrid from './ProductGrid'; // Import the ProductGrid component
-
+import { products } from "./Data";
+import HomeProductGrid from "./HomeProductGrid";
+import Navbar from "./Navbar";
 
 export default function Home() {
-  
-
   return (
     <>
-      <div>
-        <header id="navbar">
-          <img class="logo" src="urbanaura1.jpg" alt="UrbanAura Logo" />
+      <Navbar></Navbar>
 
-          <ul className="menu">
-            <li>
-              <Link to="about">CATEGORIES</Link>
-            </li>
-            <li>
-              <Link to="contact">PRODUCT PAGE</Link>
-            </li>
-            <li>
-              <Link to="contact">
-                <FontAwesomeIcon icon="shopping-cart" />
-              </Link>
-            </li>
-          </ul>
-        </header>
-
-        <div class="container">
-          <div class="Live-Comfortably">Live Comfortably</div>
-          <div class="Skincare">Skincare</div>
-          <div class="Kitchen">Kitchen</div>
-          <div class="Electronics">Electronics</div>
-        </div>
+      <div className="container">
+        <div className="Live-Comfortably">Live Comfortably</div>
+        <div className="Skincare">Skincare</div>
+        <div className="Kitchen">Kitchen</div>
+        <div className="Electronics">Electronics</div>
       </div>
 
-      <div>
-        {/* ... other components or sections ... */}
-        <ProductGrid products={products} />
+      <div className="min-products">
+        <h1 className="title">Products we are proud of</h1>
+        <HomeProductGrid products={products} />
       </div>
+
+      <div className="Poster"></div>
     </>
   );
 }

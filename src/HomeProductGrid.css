@@ -1,0 +1,24 @@
+/* HomeProductGrid.css */
+.home-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Increased gap between rows and columns */
+    margin: 0 160px; /* Left and right margins set to 160px */
+  
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards in one row for medium-sized screens */
+      margin: 0 20px; /* Reduce margins for medium-sized screens */
+    }
+  
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards in one row for small screens */
+      margin: 0 10px; /* Reduce margins for small screens */
+    }
+  
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr; /* 1 card in one row for extra small screens */
+      margin: 0 10px; /* Reduce margins for extra small screens */
+    }
+  }
+  
