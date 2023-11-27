@@ -1,0 +1,42 @@
+/* ProductCarousel.css */
+.product-carousel-container {
+    position: relative;
+  }
+  
+  .product-slide {
+    min-width: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

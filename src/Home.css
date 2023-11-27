@@ -5,7 +5,6 @@
   color: black;
 }
 
-
 .container {
   display: grid;
   height: 500px;
@@ -76,7 +75,80 @@
   filter: brightness(0.5);
 }
 
-.title{
+.title {
   margin: 100px 160px 35px 160px;
   text-align: left;
+}
+
+.poster-container {
+  border: 3px solid #fff;
+  display: flex;
+  margin: 100px 160px;
+  height: 400px;
+  overflow: hidden; /* Add overflow: hidden to the container */
+}
+
+.poster-child {
+  float: left;
+  width: 50%;
+  height: 100%; /* Set the height to 100% to match the container's height */
+}
+
+.left1 {
+  height: 100%; /* Set the height to 100% to match the container's height */
+  background-color: #e9e9e9;
+  padding: 100px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.right1 {
+  height: 100%; /* Set the height to 100% to match the container's height */
+  background-image: url(/public/images/poster.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.poster-heading{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.poster-para{
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.poster-btn{
+  font-size: 17px;
+  font-weight: 700;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid black;
+  display: flex;
+  align-self:flex-start;
+}
+
+.poster-btn:hover{
+  background-color: #e9e9e9;
+  color: #000;
+}
+
+.right2 {
+  height: 100%; /* Set the height to 100% to match the container's height */
+  background-color: #e9e9e9;
+  padding: 100px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.left2 {
+  height: 100%; /* Set the height to 100% to match the container's height */
+  background-image: url(/public/images/poster2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
