@@ -1,42 +1,56 @@
+
+
+img {
+  /* border: 2px solid red; */
+  max-width: 100%;
+  max-height: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
 /* ProductCarousel.css */
 .product-carousel-container {
-    position: relative;
-  }
-  
-  .product-slide {
-    min-width: 100%;
-  }
-  
-  img {
-    max-width: 100%;
-    max-height: 250px;
-    height: auto;
-  }
-  
-  .prev,
-  .next {
-    position: absolute;
-    top: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    padding: 10px;
-    outline: none;
-    transition: background 0.3s;
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
+  position: relative;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.prev,
+.next {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background: #000;
+  border: none;
+  /* padding: 10px; */
+  outline: none;
+  transition: background 0.3s;
+  margin: 15px 2px;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+}
+
+.prev:hover,
+.next:hover {
+  background: #373737;
+}

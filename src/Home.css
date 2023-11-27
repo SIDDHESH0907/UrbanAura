@@ -152,3 +152,10 @@
   background-position: center;
   box-sizing: border-box; /* Include padding in the element's total width and height */
 }
+
+.carosel-title{
+  font-size: 26px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 160px;
+}

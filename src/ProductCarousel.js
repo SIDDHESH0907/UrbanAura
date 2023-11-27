@@ -10,7 +10,7 @@ const ProductCarousel = ({ products }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
@@ -52,13 +52,11 @@ const ProductCarousel = ({ products }) => {
           </div>
         ))}
       </Slider>
-      <button className="prev" onClick={handlePrev}>
-        Prev
-      </button>
-      <button className="next" onClick={handleNext}>
-        Next
-      </button>
+      <div className="carousel-buttons">
     </div>
+        <button className="prev" onClick={handlePrev}>&lt;</button>
+        <button className="next" onClick={handleNext}>&gt;</button>
+      </div>
   );
 };
 

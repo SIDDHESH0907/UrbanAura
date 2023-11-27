@@ -6,6 +6,7 @@ import { products } from "./Data";
 import HomeProductGrid from "./HomeProductGrid";
 import Navbar from "./Navbar";
 import ProductCarousel from "./ProductCarousel"; // Adjust the path as needed
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -40,9 +41,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="poster-child"> */}
-        <ProductCarousel products={products} /> {/* Add this line */}
-      {/* </div> */}
+      <h1 className="carosel-title">Trending Now</h1>
+      <ProductCarousel products={products} />
 
       <div className="poster-container">
         <div className="poster-child">
@@ -59,6 +59,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Footer></Footer>
     </>
   );
 }

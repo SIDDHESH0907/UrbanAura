@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-options a {
+      font-size: 18px;
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .footer-options a:hover {
+    text-decoration: underline;
+}
+  
