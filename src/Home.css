@@ -21,12 +21,12 @@
   font-weight: 600;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .container {
-    height: 1000px;
+    height: 500px;
     padding: 0 10px; /* Adjust padding for smaller screens */
     grid-template-columns: 1fr 1fr; /* 2 columns for smaller screens */
-    grid-template-rows: repeat(4, 1fr); /* 4 rows for each category */
+    grid-template-rows: repeat(2, 1fr); /* 4 rows for each category */
     grid-template-areas:
       "Live-Comfortably Skincare"
       "Kitchen Electronics";

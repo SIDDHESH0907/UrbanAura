@@ -1,12 +1,11 @@
 // ProductPage.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { products } from './Data'; // Assuming you have a products array
+import { products } from './Data';
+import './ProductPage.css';
 
 const ProductPage = () => {
-  const { productId } = useParams(); // Get the product ID from the URL params
-
-  // Find the product with the matching ID
+  const { productId } = useParams();
   const product = products.find((p) => p.id === parseInt(productId));
 
   if (!product) {
@@ -14,12 +13,15 @@ const ProductPage = () => {
   }
 
   return (
-    <div>
+    <div className="product-details-container">
       <h2>{product.name}</h2>
       <img src={product.imageUrl} alt={product.name} />
-      <p>{product.description}</p>
-      <p>Price: ₹{product.price}</p>
-      {/* Add other details you want to display */}
+      <p className="description">Description: {product.description}</p>
+      <p className="price">Price: ₹{product.price}</p>
+      <p className="category">Category: {product.category}</p>
+      <p className="weight">Weight: {product.weight} kg</p>
+      <p className="size">Size: {product.size}</p>
+      <p className="texture">Texture: {product.texture}</p>
     </div>
   );
 };

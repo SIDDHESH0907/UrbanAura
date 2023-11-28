@@ -7,7 +7,7 @@
     margin: 0 160px; /* Left and right margins set to 160px */
   
     @media (max-width: 1200px) {
-      grid-template-columns: repeat(3, 1fr); /* 3 cards in one row for medium-sized screens */
+      grid-template-columns: repeat(3, 1fr);
       margin: 0 20px; /* Reduce margins for medium-sized screens */
     }
   
