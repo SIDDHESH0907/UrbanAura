@@ -1,7 +1,17 @@
+/* ProductCarousel.css */
 
+.product-carousel-container {
+  position: relative;
+}
 
-img {
-  /* border: 2px solid red; */
+.product-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center children horizontally */
+}
+
+.product-slide img {
   max-width: 100%;
   max-height: 250px;
   height: auto;
@@ -9,31 +19,18 @@ img {
   margin: 0 auto; /* Center the image horizontally */
 }
 
-
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-
-
-
-
-/* ProductCarousel.css */
-
-.product-carousel-container {
-  position: relative;
+.product-slide h3,
+.product-slide p {
+  text-align: center;
+  color: white;
+  margin: 0;
 }
 
 .carousel-buttons {
   bottom: 10px;
   left: 0;
   right: 0;
-  margin: 20px auto; /* Center the buttons horizontally */
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +45,7 @@ img {
   border: none;
   outline: none;
   transition: background 0.3s;
-  margin: 0 5px; /* Add some space between buttons */
+  margin: 0 5px;
   height: 40px;
   width: 40px;
   font-weight: bold;
@@ -57,4 +54,14 @@ img {
 .prev:hover,
 .next:hover {
   background: #373737;
+}
+
+.underline{
+  text-align: center;
+}
+
+.product-slide{
+  height: 220px;
+  margin: 15px;
+
 }

@@ -11,7 +11,7 @@ const ProductCarousel = ({ products }) => {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
       {
@@ -51,8 +51,12 @@ const ProductCarousel = ({ products }) => {
               {/* Use Link to wrap each product and link to the product details */}
               <div className="product-slide">
                 <img src={product.imageUrl} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p>₹ {product.price}</p>
+              </div>
+              <div>
+                <h3 className="underline">{product.name}</h3>
+              </div>
+              <div>
+                <p className="underline">₹ {product.price}</p>
               </div>
             </Link>
           ))}
