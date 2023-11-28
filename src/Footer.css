@@ -1,25 +1,29 @@
 /* Footer.css */
-.footer-container {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
+.footer-container {
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-options a {
-      font-size: 18px;
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
-  .footer-options a:hover {
-    text-decoration: underline;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
 }
-  
+
+.footer-options a:hover {
+  text-decoration: underline;
+}
+
+.rights p{
+  margin-top: 30px;
+  color: #fff; /* Add the color property for .rights directly */
+}

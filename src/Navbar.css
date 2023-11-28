@@ -1,33 +1,59 @@
+/* Navbar.css */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Blinker", sans-serif;
-    color: black;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Blinker", sans-serif;
+  color: black;
+}
+
+#navbar {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 160px; /* Adjust padding for smaller screens */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   
-  #navbar {
-    /* background-color: aqua; */
-    background-color: white;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 120px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  }
   
-  .menu {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    font-size: 18px;
+  @media (max-width: 1200px) {
+    padding: 0px 120px; /* Adjust padding for smaller screens */
   }
-  
-  .menu a {
-    text-decoration: none;
-    padding-right: 20px;
+
+  @media (max-width: 768px) {
+    padding: 0px 0px; /* Adjust padding for smaller screens */
   }
-  
-  .logo {
-    height: 120px;
+
+  @media (max-width: 480px) {
+    padding: 0px 0px; 
   }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 18px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 18px;
+}
+
+.menu a {
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.logo {
+  height: 100px; /* Adjust logo height for smaller screens */
+}
+

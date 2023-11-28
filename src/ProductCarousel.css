@@ -20,18 +20,23 @@ img {
 }
 
 
+
+
+
 /* ProductCarousel.css */
+
 .product-carousel-container {
   position: relative;
 }
 
 .carousel-buttons {
-  position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 20px auto; /* Center the buttons horizontally */
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .prev,
@@ -41,10 +46,9 @@ img {
   color: white;
   background: #000;
   border: none;
-  /* padding: 10px; */
   outline: none;
   transition: background 0.3s;
-  margin: 15px 2px;
+  margin: 0 5px; /* Add some space between buttons */
   height: 40px;
   width: 40px;
   font-weight: bold;

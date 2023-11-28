@@ -1,8 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
-import Contact from "./Contact";
+import ProductPage from "./ProductPage";
 import Categories from "./Categories";
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="categories" element={<Categories />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="product/:productId" element={<ProductPage />} />
       </Routes>
     </div>
   );
