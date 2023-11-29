@@ -1,0 +1,67 @@
+.poster-container {
+    /* border: 3px solid #ff0000; */
+    display: flex;
+    margin: 100px 160px;
+    height: 400px;
+    overflow: hidden; /* Add overflow: hidden to the container */
+  
+    @media (max-width: 768px) {
+      margin: 100px 40px; /* Reduce margins for small screens */
+    }
+  }
+  
+  .poster-child {
+    float: left;
+    width: 50%;
+    height: 100%; /* Set the height to 100% to match the container's height */
+  }
+  
+ 
+  .poster-heading{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .poster-para{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .poster-btn {
+    font-size: 14px;
+    /* font-weight: 700; */
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid black;
+    display: flex;
+    align-self: flex-start;
+  }
+  
+  .poster-btn:hover{
+    background-color: #e9e9e9;
+    color: #000;
+  }
+  
+  .right2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    background-color: #e9e9e9;
+    /* padding: 100px; */
+    box-sizing: border-box;  /* Include padding in the element's total width and height */
+  }
+  
+  .left2 {
+    height: 100%; /* Set the height to 100% to match the container's height */
+  background-image: url(/public/images/poster2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+  

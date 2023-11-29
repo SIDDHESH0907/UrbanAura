@@ -7,6 +7,8 @@ import HomeProductGrid from "./HomeProductGrid";
 import Navbar from "./Navbar";
 import ProductCarousel from "./ProductCarousel"; // Adjust the path as needed
 import Footer from "./Footer";
+import Poster1 from "./Poster1";
+import Poster2 from "./Poster2";
 
 export default function Home() {
   return (
@@ -25,40 +27,12 @@ export default function Home() {
         <HomeProductGrid products={products} />
       </div>
 
-      <div className="poster-container">
-        <div className="poster-child">
-          <div className="left1">
-            <p className="poster-heading">Creative harmonious living</p>
-            <p className="poster-para">
-              RAOUF Products are all made to standard sizes so that you can mix
-              and match them freely.
-            </p>
-            <button className="poster-btn">SHOP NOW</button>
-          </div>
-        </div>
-        <div className="poster-child">
-          <div className="right1"></div>
-        </div>
-      </div>
+      <Poster1></Poster1>
 
       <h1 className="carosel-title">Trending Now</h1>
       <ProductCarousel products={products} />
 
-      <div className="poster-container">
-        <div className="poster-child">
-          <div className="left2"></div>
-        </div>
-        <div className="poster-child">
-          <div className="right2">
-            <p className="poster-heading">Creative harmonious living</p>
-            <p className="poster-para">
-              RAOUF Products are all made to standard sizes so that you can mix
-              and match them freely.
-            </p>
-            <button className="poster-btn">SHOP NOW</button>
-          </div>
-        </div>
-      </div>
+      <Poster2></Poster2>
 
       <Footer/>
     </>
