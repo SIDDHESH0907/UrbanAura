@@ -1,17 +1,25 @@
 // ProductPage.js
-import React from "react";
+import React , { useEffect } from "react";
 import { useParams, Link } from "react-router-dom"; // Import Link
 import { products } from "./Data";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./ProductPage.css";
+import ProductCarousel from "./ProductCarousel"; // Adjust the path as needed
 
 const ProductPage = () => {
   const { productId } = useParams();
   const product = products.find((p) => p.id === parseInt(productId));
 
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, [productId]); // Trigger the effect when productId changes
+
   if (!product) {
     return <div>Product not found</div>;
   }
+
 
   return (
     <>
@@ -45,6 +53,13 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
+
+      <div className="carosel-productpage">
+        <h1 className="carosel-title">Trending Now</h1>
+        <ProductCarousel products={products} />
+      </div>
+
+      <Footer/>
     </>
   );
 };

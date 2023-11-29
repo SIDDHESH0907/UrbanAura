@@ -7,13 +7,18 @@
   font-size: 20px; /* Adjust the font size if needed */
   /* margin: 10px; */
   position: relative;
-top: -120px; left: -20px;
+top: -120px; left: -170px;
+}
+
+.product-details-container{
+margin: 0px 160px;
+
 }
 
 .product-div {
   margin-bottom: 10px;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   /* position: relative; */
 }
@@ -292,4 +297,79 @@ top: -120px; left: -20px;
   .atc-buy button {
     width: 100%;
   }
+}
+
+/* ProductCarousel.css */
+
+.carosel-productpage{
+  margin-top: 50px;
+  margin-bottom: 80px;
+
+}
+
+.product-carousel-container {
+  position: relative;
+
+}
+
+.product-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center children horizontally */
+}
+
+.product-slide img {
+  max-width: 100%;
+  max-height: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.product-slide h3,
+.product-slide p {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.carousel-buttons {
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev,
+.next {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background: #000;
+  border: none;
+  outline: none;
+  transition: background 0.3s;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+}
+
+.prev:hover,
+.next:hover {
+  background: #373737;
+}
+
+.underline{
+  text-align: center;
+}
+
+.product-slide{
+  height: 220px;
+  margin: 15px;
+
 }

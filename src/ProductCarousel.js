@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ProductCarousel.css";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 
 const ProductCarousel = ({ products }) => {
   const settings = {
@@ -48,7 +48,6 @@ const ProductCarousel = ({ products }) => {
         <Slider ref={sliderRef} {...settings}>
           {products.map((product) => (
             <Link key={product.id} to={`/product/${product.id}`} className="product-link">
-              {/* Use Link to wrap each product and link to the product details */}
               <div className="product-slide">
                 <img src={product.imageUrl} alt={product.name} />
               </div>
